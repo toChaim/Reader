@@ -14,6 +14,7 @@
 		26FA2B5E245FE7C000EE11BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FA2B5C245FE7C000EE11BD /* Main.storyboard */; };
 		26FA2B6A245FE7C000EE11BD /* ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FA2B69245FE7C000EE11BD /* ReaderTests.swift */; };
 		26FA2B75245FE7C000EE11BD /* ReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FA2B74245FE7C000EE11BD /* ReaderUITests.swift */; };
+		26FA2B84245FE86300EE11BD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FA2B83245FE86300EE11BD /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		26FA2B70245FE7C000EE11BD /* ReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FA2B74245FE7C000EE11BD /* ReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderUITests.swift; sourceTree = "<group>"; };
 		26FA2B76245FE7C000EE11BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26FA2B83245FE86300EE11BD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26FA2B84245FE86300EE11BD /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +85,7 @@
 				26FA2B68245FE7C000EE11BD /* ReaderTests */,
 				26FA2B73245FE7C000EE11BD /* ReaderUITests */,
 				26FA2B51245FE7BF00EE11BD /* Products */,
+				26FA2B82245FE86300EE11BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +137,14 @@
 				26FA2B76245FE7C000EE11BD /* Info.plist */,
 			);
 			path = ReaderUITests;
+			sourceTree = "<group>";
+		};
+		26FA2B82245FE86300EE11BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26FA2B83245FE86300EE11BD /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

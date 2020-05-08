@@ -7,10 +7,22 @@
 //
 
 import SwiftUI
+import AVFoundation
+
 
 struct ContentView: View {
+    func saySomething (){
+        let utterance = AVSpeechUtterance(string: "Hello world")
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        utterance.rate = 1.0
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
+    
     var body: some View {
-        Text("Hello, World!")
+        saySomething()
+        return Text("Hello world")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

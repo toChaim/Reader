@@ -5,23 +5,23 @@
 //  Created by Chaim Finkelman on 5/3/20.
 //  Copyright © 2020 Chaim Finkelman. All rights reserved.
 //
-
+import Cocoa
 import SwiftUI
 import AVFoundation
 
 
 struct ContentView: View {
-    func saySomething (){
-        let utterance = AVSpeechUtterance(string: "Hello world")
+    func saySomething (txt: String){
+        let utterance = AVSpeechUtterance(string: txt)
         utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
-        utterance.rate = 1.0
+        utterance.rate = 100.0
         
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.speak(utterance)
     }
     
     var body: some View {
-        saySomething()
+        saySomething(txt: "This is a test")
         return Text("Hello world")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
